@@ -1,0 +1,44 @@
+<html>
+<head>
+	<style>
+		body {
+			background-image: url("https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg?cs=srgb&dl=pexels-tobias-bj%C3%B8rkli-2113566.jpg&fm=jpg");
+			background-size: 100% 100%;			
+
+		}
+
+		h1 {
+			color: red;
+			font-family: initial;
+			font-size:xx-large;
+		}
+		h2{
+			color: rgb(0, 255, 0);
+			font-family: cursive;
+			font-size: x-large;
+		}
+	</style>
+	<title>
+	</title>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			document.querySelector('form').onsubmit = function() {
+				let name = document.querySelector('#name').value;
+				alert(`Congratulations ${name}!, you just got pranked again...`)
+			}
+		})
+	</script>
+</head>
+<body>
+	<h1>
+		Welcome to the surprise page...type your name in the box and press the submit button for that special thing...
+	</h1>
+	<h2>
+		
+	</h2>
+	<form>
+		<input autofocus id = "name" placeholder="type your name here..." type = "text">
+		<input type = "submit">
+	</form>
+</body>
+</html>
